@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>assignment 5</title>
+</head>
+
+<body>
+ 
+  <header class=" md:mx-10">
+    <div class="navbar bg-pink-300 mt-12 px-20">
+      <div class="navbar-start">
+        
+          
+       
+        <h1> <span class="text-2xl font-bold">Interactive</span><br>
+          Geometry Genius</h1>
+      </div>
+     
+      <div class="navbar-end">
+        <a id="btn-nav" class="btn bg-red-800 text-white border-0 rounded" href="hellow.html">Blog</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- section Work -->
+<main>
+  <section  class=" flex flex-col md:flex-row ">
+    <div class="products-details mx-auto md:w-[65%] grid md:grid-cols-3">
+     
+  <div class="card w-72 bg-base-100 shadow-xl mx-10 mt-10">
+    <figure class="px-10 pt-10">
+      <img src="" alt="Shoes" class="rounded-xl" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 id="t-name" class="card-title">Triangle</h2>
+      <p>Area(A) = 0.5 x b x h</p>
+      <div class=>
+        <input type="text"id="tB" placeholder="b" class="border-2 w-20"> cm <input type="text" id="tH" placeholder="h" class="border-2 w-20"> cm
+      </div>
+      <div class="card-actions mt-5">
+        <button id="btn-t" class="btn btn-primary">Calculate</button>
+      </div>
+    </div>
+  </div>
+  <div class="card w-72 bg-base-100 shadow-xl mx-10 mt-10">
+    <figure class="px-10 pt-10">
+      <img src="" alt="Shoes" class="" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 id="r-name" class="card-title">Rectangle</h2>
+      <p>Area(A) = w x l</p>
+      <div>
+        <input type="text"id="rW" placeholder="w" class="border-2 w-20"> cm  <input type="text" id="rL" placeholder="l" class="border-2 w-20"> cm
+      </div>
+      <div class="card-actions mt-3">
+        <button id="btn-r" class="btn btn-primary">Calculate</button>
+      </div>
+    </div>
+  </div>
+  <div class="card w-72 bg-base-100 shadow-xl mx-10 mt-10">
+    <figure class="px-10 pt-10">
+      <img src="" alt="Shoes" class="" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 id="Para-name" class="card-title">Parallelogram</h2>
+      <p>Area(A) = b x h</p>
+      <p>b = <span id="pB">10</span>cm, h= <span id="pH">12</span>cm</p>
+      <div class="card-actions">
+        <button id="btn-P" class="btn btn-primary">Calculate</button>
+      </div>
+    </div>
+  </div>
+  <div class="card w-72 bg-base-100 shadow-xl mx-10 mt-10">
+    <figure class="px-10 pt-10">
+      <img src="" alt="Shoes" class="" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 id="R-name" class="card-title">Rhombus</h2>
+      <p>Area(A) =0.5 x d <sub>1</sub> x d<sub>2</sub></p>
+      <p>d <sub>1</sub> = <span id="RD1">16</span>cm, d <sub>2</sub>= <span id="RD2">8</span>cm</p>
+      <div class="card-actions">
+        <button id="btn-R" class="btn btn-primary">Calculate</button>
+      </div>
+    </div>
+  </div>
+  <div class="card w-72 bg-base-100 shadow-xl mx-10 mt-10">
+    <figure class="px-10 pt-10">
+      <img src="" alt="Shoes" class="" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 id="P-name" class="card-title">Pentagon</h2>
+      <p>Area(A) =0.5 x p x b</p>
+      <p>p = <span id="PP">6</span>cm, b= <span id="PB">10</span>cm</p>
+      <div class="card-actions mt-4">
+        <button id="btn-Pe" class="btn btn-primary">Calculate</button>
+      </div>
+    </div>
+  </div>
+  <div class="card w-72 bg-base-100 shadow-xl mx-10 mt-10">
+    <figure class="px-10 pt-10">
+      <img src="" alt="Shoes" class="" />
+    </figure>
+    <div class="card-body items-center text-center">
+      <h2 id="E-name" class="card-title">Ellipse</h2>
+      <p>Area(A) = <span class="text-xl text-black">π</span>ab</p>
+      <p>a = <span id="EA">10</span>cm, b= <span id="EB">4</span>cm</p>
+      <div class="card-actions">
+        <button id="btn-E" class="btn btn-primary">Calculate</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    <div class="card-details w-full md:w-[30%]  md:mx-10 mt-12">
+      <h1 class="text-center font-bold text-2xl"><span>Area Calculation</span> </h1> <br>
+      <div class="overflow-x-auto">
+        <table class="table w-full">
+          <!-- head -->
+          
+          <tbody id="table-container">
+        
+         
+            
+          </tbody>
+         
+        </table>
+      </div>
+
+
+
+
+
+
+
+    </div>
+  </section>
+</main>
+<script src="./index.js"></script>
+
+</body>
+
+</html>
